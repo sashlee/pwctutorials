@@ -1,0 +1,9 @@
+[
+  { "id": 1, "description": "Having the induction session", "isDone": true },
+  {
+    "id": 2,
+    "description": "Starting the JavaSript, HTML,CSS and React class",
+    "isDone": false
+  },
+  { "id": 3, "description": "Starting the C# .Net Classes", "isDone": false }
+]
