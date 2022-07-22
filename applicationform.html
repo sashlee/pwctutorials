@@ -4,41 +4,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contactus.html">Contact Us</a>
-    <a href="gallery.html">Gallery </a>
-    <a href="applicationform.html">Application Form</a>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="contactus.html">Contact Us</a> |
+    <a href="gallery.html">Gallery </a>|
+    <a href="applicationform.html">Application Form</a> |
     <a href="studentsdata.html">Students Data</a>
     <div style="display: flex; align-items: center; ">
         <img src="images/PwC-logo.svg" alt="" class="image"> 
         <h1>PWC Student Website</h1>    
     </div>
     <h2>Application Form</h2>
-    <div>
-        <form action="">
+    <div class="container">
+        <form action="" class="my-form">
             <div>
                 <div>
                 <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" /> 
-                <label for="lastname">Last Name:</label> 
-                <input type="text" name="lastname" />                    
+                <input type="text" name="firstname" id="firstname" /> 
+                <label for="lastname" class="lastname">Last Name:</label> 
+                <input type="text" name="lastname" id="lastname"/>                    
                 </div>
                 <div style="margin-top: 15px;">
                  <label for="age">Age:</label>
-                <input type="text" name="age" />   
+                <input type="text" id="age" name="age" />   
                 </div> <br>
                 <div>
-                 <input type="radio"  name="gender" value="Male">
+                    <label for="gender">Gender:</label>
+                 <input type="radio"  name="gender" id="male" value="Male">
                
                  <label for="male">Male</label>
-                <input type="radio"name="gender" value="Female">
+                <input type="radio"name="gender" id="female" value="Female">
                 <label for="css">Female</label>     
                 </div>
                 <br>
                <div>
                 <label for="states">Select a State:</label>
-                <select name="states" >
+                <select name="states" id="states" >
                   <option value="Abia">Abia</option>
                   <option value="Adamawa">Adamawa</option>
                   <option value="Akwa Ibom">Akwa Ibom</option>
@@ -49,26 +50,28 @@
                </div>
                <br>
                <div>
-                <label for="states">Select from the following courses:</label> <br> 
-                <input type="checkbox"  name="datascience" value="Data Science">
+                <label for="courses">Select from the following courses:</label> <br> 
+                <input type="checkbox"  name="datascience" id="datascience" class="courses" value="Data Science">
                 <label for="datascience"> Data Science</label><br>
-                <input type="checkbox"  name="fullstack" value="Fullstack">
+                <input type="checkbox"  name="fullstack" id="fullstack" class="courses" value="Fullstack">
                 <label for="fullstack"> Fullstack</label><br>
-                <input type="checkbox"  name="agile" value="Agile">
+                <input type="checkbox"  name="agile" id="agile" class="courses" value="Agile">
                 <label for="agile"> Agile </label><br>
-                <input type="checkbox"  name="internetofthings" value="internetofthings">
+                <input type="checkbox"  name="internetofthings" id="internetofthings" class="courses"  value="internetofthings">
                 <label for="internetofthings"> Internet of
                 things (IoT)</label><br>
-                <input type="checkbox"  name="machinelearning" value="Machine Learning">
+                <input type="checkbox"  name="machinelearning" id="machinelearning" class="courses" value="Machine Learning">
                 <label for="machinelearning"> Machine Learning</label><br>
-                <input type="checkbox"  name="devops" value="Devops">
+                <input type="checkbox"  name="devops" id="devops" class="courses" value="Devops">
                 <label for="devops"> Devops</label><br>
                </div>
                 <br>
-               <button type="submit"> Submit</button>
+               <button class="btn" type="submit" value="sumbit"> Submit</button>
                 
             </div>
         </form>
+        <div id="data"></div>
     </div>
+    <script src="application.js"></script>
 </body>
 </html>
